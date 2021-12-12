@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta name="robots" content="none">
+
+    <title>Pzo</title>
+
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script src="model/model.js"></script>
+</head>
+
+<body>
+
+    <div id="preloader" class="preloader">
+        <svg viewBox="0 0 1920 739" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="svg-center-arrows">
+                <g class="arrow-5 arrow">
+                    <path
+                        d="M1089.83 559.465C1081.12 568.55 1072.05 578 1063.34 587.085C1037.21 572.548 1011.08 558.011 984.944 543.474C997.284 531.117 1009.26 519.124 1021.6 506.768C1034.67 514.763 1047.37 522.395 1060.44 530.39C1059.35 533.661 1058.98 537.296 1057.89 540.566H1077.49C1079.67 541.657 1081.85 543.11 1083.3 544.201C1085.48 548.925 1087.66 554.013 1089.83 559.465Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M1148.63 705.2C1139.19 714.649 1129.76 724.098 1120.32 733.184C1101.08 684.485 1082.21 635.785 1062.98 586.722C1071.69 577.273 1080.76 567.824 1089.47 558.738C1109.43 607.438 1129.03 656.137 1148.63 705.2Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M1120.68 733.186C1076.04 708.473 1030.67 684.124 985.67 659.41C985.67 620.524 985.307 582 985.307 543.113C1011.44 558.014 1037.21 572.551 1063.7 586.725C1082.21 635.788 1101.45 684.85 1120.68 733.186Z"
+                        fill="#F8F8F8" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <g class="arrow-6 arrow">
+                    <path
+                        d="M1212.87 514.038C1200.89 524.94 1188.91 535.843 1176.94 546.746C1160.24 532.572 1143.91 518.399 1126.85 503.862C1107.98 487.871 1089.47 471.88 1070.6 455.889C1083.3 442.806 1095.64 429.722 1108.34 416.639C1142.82 449.347 1177.66 481.329 1212.87 514.038Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M1236.46 641.237C1222.31 647.052 1207.79 653.23 1193.63 659.045C1180.93 624.156 1168.23 589.267 1155.16 554.377C1167.86 546.745 1180.93 539.113 1193.63 531.481C1207.79 567.824 1222.31 604.531 1236.46 641.237Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M1236.46 641.235C1217.95 669.946 1199.44 698.294 1180.57 727.004C1166.05 730.275 1151.53 733.183 1137.38 736.454C1156.25 710.65 1174.76 684.847 1193.63 659.043C1207.79 653.228 1221.94 647.05 1236.46 641.235Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <path
+                    d="M1193.63 659.043C1175.12 684.847 1156.25 710.65 1137.38 736.453C1136.29 733.183 1134.84 730.275 1133.75 727.004C1114.15 677.941 1094.91 629.605 1074.95 580.543C1072.77 575.455 1070.6 570.367 1068.78 565.279C1068.42 564.188 1067.69 562.735 1067.33 561.644H1043.01C1044.1 558.373 1044.47 554.739 1045.55 551.468C1053.9 519.85 1062.25 487.868 1070.96 456.25C1106.53 486.415 1141.73 516.943 1177.3 546.744C1170.04 549.288 1163.15 551.468 1155.89 554.012C1168.95 589.628 1181.66 624.154 1193.63 659.043Z"
+                    fill="#F8F8F8" stroke="black" stroke-width="4.81263" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <g class="arrow-4 arrow">
+                    <path d="M740.685 386.471C736.33 389.378 732.339 391.921 727.985 394.828" stroke="black"
+                        stroke-width="4.81263" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M878.241 434.809C874.611 438.443 870.619 442.077 866.99 446.075C865.175 453.707 863.36 460.976 861.908 468.608C817.267 443.894 772.989 419.545 728.348 395.195L734.155 391.197L735.243 390.107C737.058 389.017 738.873 387.563 740.687 386.109C771.174 402.1 801.661 418.091 832.148 434.082C839.769 430.448 847.028 426.813 854.65 423.179C862.271 427.177 870.256 430.811 878.241 434.809Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M982.767 543.11C969.338 554.74 956.272 566.37 942.844 578L904.735 511.856C904.009 510.402 902.92 508.585 901.832 507.131C890.218 486.779 878.241 466.427 866.627 445.712C870.256 442.077 874.248 438.443 877.878 434.445C886.225 426.45 894.21 418.454 902.557 410.459C929.415 454.797 955.909 498.772 982.767 543.11Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <path
+                    d="M862.634 616.887C863.723 606.347 864.812 596.535 866.264 585.995C837.955 571.822 809.646 556.921 780.973 542.747C763.19 493.321 745.406 444.622 727.985 395.195V394.832C727.985 394.832 728.348 394.832 728.348 395.195C772.989 419.909 817.267 443.895 861.546 468.608C863.36 460.976 865.175 453.344 866.627 446.075C878.241 466.427 890.218 487.143 901.832 507.495C902.92 508.949 903.646 510.766 904.735 512.219C917.438 534.025 930.141 556.194 942.843 578.363C915.986 591.083 889.129 604.167 862.634 616.887Z"
+                    fill="#F8F8F8" stroke="black" stroke-width="4.81263" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <g class="arrow-3 arrow">
+                    <path
+                        d="M878.604 383.203C867.353 395.196 856.827 407.189 845.576 419.182C841.947 423.18 838.318 426.814 834.688 430.812C833.962 431.539 833.236 432.629 832.511 433.72C832.148 434.083 832.148 434.446 831.785 434.446C801.661 418.456 771.174 402.101 740.687 386.474C734.88 383.203 728.711 380.296 722.904 377.025C746.494 343.953 770.085 310.517 793.313 277.445C804.201 290.892 814.727 303.976 825.615 317.422C843.399 339.228 860.82 361.034 878.604 383.203Z"
+                        fill="#F8F8F8" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M916.349 348.678C897.839 372.664 879.692 396.287 861.183 419.91C859.005 421 856.827 422.09 854.65 423.181C847.028 426.815 839.769 430.449 832.148 434.083C832.511 433.72 832.511 433.357 832.874 433.357C837.229 428.632 841.584 423.907 845.939 419.183C856.827 407.19 867.715 395.197 878.967 383.203C891.306 371.574 904.009 360.307 916.349 348.678Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M916.349 348.677C903.646 360.307 891.306 371.573 878.604 383.203C850.294 347.95 821.622 312.698 792.95 277.445C805.29 264.725 817.63 252.005 829.97 239.285C859.005 275.628 887.677 312.334 916.349 348.677Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <g class="arrow-2 arrow">
+                    <path
+                        d="M884.411 157.151C873.885 168.781 863.36 180.411 852.835 192.404C845.213 184.045 837.592 175.686 829.607 166.964C841.221 154.971 852.835 142.978 864.449 130.984C871.345 139.707 877.878 148.429 884.411 157.151Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M1044.47 168.778C1044.47 168.778 1044.47 169.141 1044.47 168.778C1033.21 181.134 1022.33 193.491 1011.08 205.847C973.33 184.768 935.585 163.326 898.202 142.247C909.816 129.891 921.43 117.898 933.044 105.541C970.427 126.62 1007.45 147.699 1044.47 168.778Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M973.693 271.267C962.079 282.897 950.465 294.163 938.851 305.793C963.168 272.357 987.122 239.285 1011.44 205.85C1022.69 193.493 1033.58 181.137 1044.83 168.78C1020.87 202.943 997.284 237.105 973.693 271.267Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M991.477 301.067C981.315 309.425 971.153 318.148 961.353 326.507C953.732 319.601 946.11 312.696 938.851 306.155C950.828 294.525 962.442 283.259 974.419 271.629C978.048 275.263 981.315 278.534 984.944 282.168C987.122 288.347 989.299 294.525 991.477 301.067Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <path
+                    d="M938.488 305.79C945.747 312.695 953.732 319.6 960.99 326.142C925.785 318.873 890.943 310.878 855.739 303.609C847.028 257.817 838.68 212.025 829.97 166.96C830.333 167.324 831.059 168.414 832.148 169.141C839.043 177.136 846.302 184.405 853.198 192.4C858.279 187.312 863.36 181.497 868.441 176.046C877.878 164.416 888.403 153.513 898.565 142.247C935.948 163.326 974.056 184.768 1011.08 205.847C987.122 239.646 962.805 272.718 938.488 305.79Z"
+                    fill="#F8F8F8" stroke="black" stroke-width="4.81263" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <g class="arrow-1 arrow light">
+                    <path
+                        d="M1133.02 361.396C1121.05 371.935 1109.07 382.475 1097.09 393.377C1073.5 335.956 1049.91 278.171 1025.96 220.749C1037.93 208.756 1049.55 197.126 1061.52 185.133C1085.11 244.008 1109.07 302.52 1133.02 361.396Z"
+                        fill="#01305D" stroke="black" stroke-width="4.81263" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <path
+                    d="M1096.73 393.38C1066.61 396.65 1036.84 399.558 1007.45 402.465C997.284 376.298 987.485 349.405 977.323 322.874C974.782 316.696 972.604 310.154 970.064 303.976C969.701 301.796 968.612 299.615 967.886 298.161C987.485 272.358 1006.36 246.554 1025.59 220.751C1049.18 278.536 1073.14 335.958 1096.73 393.38Z"
+                    fill="#F8F8F8" stroke="black" stroke-width="4.81263" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+        </svg>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="header__logo">
+                    <img class="header__logo-image" src="images/header__logo.png" alt="логотип">
+                </a>
+                <div id="menuToggle" class="header__menu-wrapper">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div id="menu" class="header__menu-inner">
+                        <a href="#" class="header__burger-logo">
+                            <img src="images/logo-modal.png" alt="ПЗО лого">
+                        </a>
+                        <a href="#search" class="header__search popup-open">
+                            <div class="header__search-inner">
+                                <svg class="header__search-icon" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.7749 0.00390625C12.8138 0.00390625 6.33692 6.48077 6.33692 14.4419C6.33692 17.9444 7.59055 21.1596 9.67271 23.6623L0.417777 32.8544C-0.121034 33.3895 -0.12399 34.2601 0.411108 34.7989C0.679929 35.0696 1.03332 35.205 1.38677 35.205C1.73706 35.205 2.08749 35.0719 2.35569 34.8055L11.6233 25.601C14.1161 27.649 17.3045 28.8798 20.7749 28.8798C23.2517 28.8798 25.6959 28.2416 27.8429 27.0341C28.5048 26.6619 28.7396 25.8235 28.3673 25.1615C27.9951 24.4997 27.1567 24.2647 26.4948 24.6371C24.7585 25.6136 22.7806 26.1297 20.7749 26.1297C14.3302 26.1297 9.08701 20.8865 9.08701 14.4419C9.08701 7.99717 14.3302 2.75399 20.7749 2.75399C27.2196 2.75399 32.4627 7.99717 32.4627 14.4419C32.4627 16.4722 31.9345 18.4713 30.9353 20.2233C30.559 20.883 30.7888 21.7227 31.4484 22.099C32.108 22.4752 32.9478 22.2455 33.3241 21.5859C34.5597 19.4195 35.2128 16.9492 35.2128 14.4419C35.2128 6.48077 28.736 0.00390625 20.7749 0.00390625Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="header__search-inner">
+                                Поиск
+                            </div>
+                        </a>
+                        <nav class="header__nav">
+                            <ul class="header__menu">
+                                <li class="header__list">
+                                    <a href="index.html" class="header__link active">Главная</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="lines.html" class="header__link">Линии</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="category.html" class="header__link">Оборудование</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="dillers.html" class="header__link">О компании</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="service.html" class="header__link">Клиентам</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="contacts.html" class="header__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="header__nav mobile">
+                            <ul class="header__menu">
+                                <li class="header__list">
+                                    <a href="demand.html" class="header__link active">Спрос по России</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="vacancies.html" class="header__link active">Вакансии</a>
+                                </li>
+                                <li class="header__list">
+                                    <a href="service.html" class="header__link active">Служба-сервис</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="#question-not-worktime" class="header__socials popup-open">
+                            <svg width="32" height="37" viewBox="0 0 32 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.9001 3.5127V11.6018C19.9001 12.3004 19.9547 12.8134 20.0642 13.1417C20.2421 13.6487 20.646 13.9014 21.2755 13.9014C21.9595 13.9014 22.6646 13.4781 23.39 12.6287V13.7579H25.2586V3.5127H23.3904V11.335C22.9796 11.9244 22.5899 12.2179 22.2199 12.2179C21.9737 12.2179 21.8298 12.0679 21.789 11.7663C21.7752 11.7393 21.7684 11.4991 21.7684 11.0479V3.5127H19.9001Z"
+                                    fill="white" />
+                                <path
+                                    d="M15.6292 13.9008C16.5736 13.9008 17.299 13.5518 17.8055 12.854C18.1888 12.3478 18.3805 11.5397 18.3805 10.4311V6.83811C18.3805 5.74328 18.1888 4.94282 17.8055 4.4362C17.299 3.73761 16.5737 3.38867 15.6292 3.38867C14.7119 3.38867 13.9934 3.73761 13.4731 4.4362C13.0898 4.94322 12.8982 5.74368 12.8982 6.83811V10.4311C12.8982 11.5267 13.0898 12.3345 13.4731 12.854C13.993 13.5518 14.7118 13.9008 15.6292 13.9008ZM14.7462 6.46824C14.7462 5.52416 15.0405 5.05202 15.6292 5.05202C16.2174 5.05202 16.5121 5.52422 16.5121 6.46824V10.78C16.5121 11.7386 16.2174 12.2173 15.6292 12.2173C15.0405 12.2173 14.7462 11.7386 14.7462 10.78V6.46824Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.393 13.7574V8.19353L12.8773 0.000976562H10.783L9.38705 5.40113L7.92875 0.000976562H5.75244C6.13573 1.15123 6.58045 2.43123 7.087 3.84018C7.73024 5.72985 8.14748 7.18042 8.33952 8.19359V13.7571H10.3929V13.7574H10.393Z"
+                                    fill="white" />
+                                <path
+                                    d="M29.5659 16.9806C28.9565 16.4335 28.2549 16.1119 27.4612 16.0153C24.942 15.742 21.1428 15.6045 16.0638 15.6045C10.9845 15.6045 7.19219 15.7416 4.68671 16.0153C3.87874 16.1116 3.17393 16.4335 2.57139 16.9806C1.96886 17.5293 1.57181 18.2062 1.38013 19.0141C1.02386 20.6025 0.846313 22.9977 0.846313 26.2019C0.846313 29.4604 1.02425 31.8559 1.38013 33.3897C1.558 34.1968 1.95148 34.8746 2.56089 35.4225C3.1699 35.9705 3.87148 36.2851 4.66563 36.3676C7.18453 36.6547 10.9836 36.7983 16.0634 36.7983C21.1428 36.7983 24.942 36.6547 27.4608 36.3676C28.2546 36.2851 28.953 35.9705 29.5554 35.4225C30.1576 34.8746 30.5547 34.1968 30.7468 33.3897C31.1026 31.8013 31.2805 29.4054 31.2805 26.2019C31.2805 22.9435 31.1026 20.5479 30.7468 19.0141C30.5684 18.2062 30.1749 17.5293 29.5659 16.9806ZM9.53308 21.0878H7.33571V32.7731H5.28224V21.0878H3.12615V19.1577H9.53355V21.0878H9.53308ZM15.0775 32.7731H13.2497V31.6635C12.5105 32.4985 11.8122 32.9167 11.155 32.9167C10.525 32.9167 10.1283 32.6631 9.96376 32.1569C9.85414 31.8281 9.79957 31.3291 9.79957 30.6574V22.6277H11.6274V30.1035C11.6274 30.5414 11.6343 30.7812 11.648 30.822C11.6892 31.1091 11.8328 31.2527 12.0795 31.2527C12.4491 31.2527 12.8393 30.9656 13.2502 30.3902V22.6277H15.0779V32.7731H15.0775ZM22.0599 29.7338C22.0599 30.7334 21.9984 31.4176 21.8751 31.7872C21.6422 32.5398 21.1565 32.9167 20.4169 32.9167C19.7599 32.9167 19.1233 32.5398 18.5071 31.7872V32.7731H16.6793V19.1577H18.5071V23.6139C19.0954 22.8751 19.7323 22.5051 20.4169 22.5051C21.1561 22.5051 21.6422 22.8885 21.8751 23.6548C21.9984 24.011 22.0599 24.6887 22.0599 25.6883V29.7338ZM29.0011 28.0499H25.3253V29.8365C25.3253 30.7815 25.6398 31.253 26.2699 31.253C26.7216 31.253 26.9953 31.0068 27.0912 30.5142C27.1183 30.3771 27.1324 29.9598 27.1324 29.2611H29.0011V29.5283C29.0011 30.1996 28.9873 30.5959 28.9598 30.7196C28.9185 31.0897 28.775 31.4584 28.5288 31.8284C28.0358 32.5535 27.2967 32.917 26.3108 32.917C25.3662 32.917 24.6265 32.568 24.0928 31.8693C23.6957 31.363 23.4971 30.5696 23.4971 29.4875V25.9346C23.4971 24.8534 23.6888 24.0591 24.0722 23.552C24.6059 22.8541 25.3382 22.5051 26.2695 22.5051C27.1867 22.5051 27.9125 22.854 28.4462 23.552C28.8159 24.0591 29.0007 24.8533 29.0007 25.9346V28.0499H29.0011Z"
+                                    fill="white" />
+                                <path
+                                    d="M26.2483 24.1738C25.6327 24.1738 25.3253 24.6392 25.3253 25.5691V26.5132H27.1718V25.5691C27.1713 24.6396 26.8639 24.1738 26.2483 24.1738Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.4291 24.1719C19.1142 24.1719 18.8063 24.3226 18.5056 24.6242V30.8019C18.8064 31.1033 19.1143 31.2533 19.4291 31.2533C19.9626 31.2533 20.2298 30.7954 20.2298 29.8784V25.5478C20.2293 24.6306 19.9626 24.1719 19.4291 24.1719Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <a href="#question" class="header__question popup-open">
+                    <h4 class="header__question-text">Задать вопрос</h4>
+                </a>
+            </div>
+        </div>
+    </header>
+
+<div class="breadcrubs">
+    <div class="container">
+        <ol class="breadcrubs__menu">
+            <li class="breadcrubs__list"><a class="breadcrubs__link" href="index.html">Главная</a></li>
+            <li class="breadcrubs__list"><a class="breadcrubs__link" href="#">О компании </a></li>
+            <li class="breadcrubs__list"><span class="breadcrubs__link">Диллерам</span></li>
+        </ol>
+    </div>
+</div>
+
+<section class="first page-dillers">
+    <div class="container">
+        <div class="first__title">
+            <h1 class="first__title-text">
+                Приглашаем дилеров
+                <br>
+                к сотрудничеству для продажи
+                <br>
+                полимерного оборудования
+            </h1>
+        </div>
+    </div>
+</section>
+
+<div class="model--white"></div>
+
+<script>
+    marmoset.embed('model/Line02.mview', { width: '100%', height: 1080, autoStart: true, fullFrame: true, pagePreset: false });
+</script>
+
+<section class="convertion main-lines dillers">
+    <div class="container">
+        <h2 class="section__title">Каждый клиент может <br> протестировать оборудование</h2>
+        <p class="section__desc">У нас имеются собственные производственные цеха, что позволяет
+            обеспечить индивидуальный подход к каждому клиенту
+            и качественное выполнение работ</p>
+        <div class="convertion__container">
+            <div class="main-lines__wrapper convertion__wrapper">
+                <div class="main-lines__block">
+                    <div class="main-lines__image">
+                        <img src="images/25-per-icon.png" alt="Icon">
+                    </div>
+                    <div class="main-lines__desc">
+                        <p>Максимальная скидка для наших дилеров, бонусы оговариваются индивидуально
+                        </p>
+                    </div>
+                </div>
+                <div class="main-lines__block">
+                    <div class="main-lines__image">
+                        <img src="images/200-png.png" alt="Icon">
+                    </div>
+                    <div class="main-lines__desc">
+                        <p>Позиций оборудования на сайте</p>
+                    </div>
+                </div>
+                <div class="main-lines__block">
+                    <div class="main-lines__image">
+                        <img src="images/13-icon.png" alt="Icon">
+                    </div>
+                    <div class="main-lines__desc">
+                        <p>Освоенных товарных категорий</p>
+                    </div>
+                </div>
+                <div class="main-lines__block">
+                    <div class="main-lines__image">
+                        <img src="images/30.png" alt="Icon">
+                    </div>
+                    <div class="main-lines__desc">
+                        <p>Моделей оборудования в наличии</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tools page-main dillers">
+    <div class="container">
+        <h2 class="section__title">Ассортимент оборудования
+        </h2>
+        <div class="tools__wrapper">
+            <div class="tools__list">
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-1.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Стол с роликами</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-1.png" data-tool-name="Стол с роликами">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-2.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Раскиповыватель</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-2.png" data-tool-name="Раскиповыватель">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-3.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Сортировочная лента</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-3.png" data-tool-name="Сортировочная лента">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-4.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Конвейер</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-4.png" data-tool-name="Конвейер">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-5.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Дробилка</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-5.png" data-tool-name="Дробилка">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-6.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Промежуточная емкость</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-6.png" data-tool-name="Промежуточная емкость">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-7.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Ванна флотации</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-7.png" data-tool-name="Ванна флотации">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-8.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Фрикционная мойка</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-8.png" data-tool-name="Фрикционная мойка">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-9.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Циклоны</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-9.png" data-tool-name="Циклоны">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-10.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Полимерпесчаное оборудование</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-10.png" data-tool-name="Полимерпесчаное оборудование">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-11.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Агломераторы</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-11.png" data-tool-name="Агломераторы">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-12.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title"> Шредеры
+                    </h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-12.png" data-tool-name="Шредеры">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-13.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Прессовое оборудование</h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-13.png" data-tool-name="Прессовое оборудование">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-14.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Гильотины
+                    </h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-14.png" data-tool-name="Гильотины">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+                <div class="tools__block">
+                    <div class="tools__block-image">
+                        <img src="images/equipment-15.png" alt="equipment icon">
+                    </div>
+                    <h4 class="tools__block-title">Другое оборудование
+                    </h4>
+                    <a class="tools__block-btn popup-open" href="#question-tool-not-worktime"
+                        data-picture="images/equipment-15.png" data-tool-name="Другое оборудование">
+                        <h6 class="tools__block-btn-text">Задать вопрос</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tools list white">
+    <div class="container">
+        <h2 class="section__title">Что мы предлагаем своим партнерам?
+        </h2>
+        <nav class="tools__nav">
+            <a class="tools__link active" href="page-1"><span>Технологии</span></a>
+            <a class="tools__link" href="page-2"><span>Сервис</span></a>
+            <a class="tools__link" href="page-3"><span>Обучение</span></a>
+            <a class="tools__link" href="page-4"><span>Прибыльность</span></a>
+        </nav>
+    </div>
+    <div class="tools__wrapper active" data-tools-list="page-1">
+        <div class="advatages__container">
+            <div class="advantages__wrapper">
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/reason-2.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Качественное оборудование
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/standart-resume.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Совремнное стандарты изготовления
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/technical-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Разнообразность технических
+                        решений
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/advantages-2.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Разработка и внедрение нового оборудования по ТЗ дилера
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tools__wrapper" data-tools-list="page-2">
+        <div class="advatages__container">
+            <div class="advantages__wrapper">
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/arrow-stand-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Индивидуальный подход
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/reason-5.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Надежный гарантийный сервис
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/advantages-3.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Персоналный менеджер
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/chat-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Профессиональная консультация
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tools__wrapper" data-tools-list="page-3">
+        <div class="advatages__container">
+            <div class="advantages__wrapper">
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/pzo-book-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Каталоги, печатный материал
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/pzo-book-open-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Обучающий материал по специфике оборудования и его продажам
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/bag-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Стажировка для сотрудников на заводе (сервис, продажа, реклама)
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/desk-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Совместное участие в тематических выставках
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/hat-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Ежегодные обучающие групповые семинары с действующими дилерами
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/persons-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Стать частью международной команды профессионалов ПЗО
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tools__wrapper" data-tools-list="page-4">
+        <div class="advatages__container">
+            <div class="advantages__wrapper">
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/persons-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Скидки без обязательства по обороту
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/grafic-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Возрастающая шкала прибыльности
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/shield-icon.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Ценовая защита дилера
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__image">
+                        <img src="images/advantages-1.png" alt="icon">
+                    </div>
+                    <h3 class="advantages__title">Дополнительные бонусы сверхконтракта по результатам года
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-lines__link">
+            <a href="#form__diller" class="slowly-scroll default-btn">
+                <span>Стать партнером</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="slider dots-enable">
+    <h2 class="section__title">Качество оборудования подтверждено лицензиями и сертификатами</h2>
+    <div class="container">
+        <div class="slider__wrapper">
+            <div class="slider__slide">
+                <a href="images/doc-1.png">
+                    <img src="images/doc-1.png" alt="лицензия">
+                </a>
+            </div>
+            <div class="slider__slide">
+                <a href="images/doc-2.png">
+                    <img src="images/doc-2.png" alt="лицензия">
+                </a>
+            </div>
+            <div class="slider__slide">
+                <a href="images/doc-3.png">
+                    <img src="images/doc-3.png" alt="лицензия">
+                </a>
+            </div>
+            <div class="slider__slide">
+                <a href="images/doc-1.png">
+                    <img src="images/doc-1.png" alt="лицензия">
+                </a>
+            </div>
+            <div class="slider__slide">
+                <a href="images/doc-2.png">
+                    <img src="images/doc-2.png" alt="лицензия">
+                </a>
+            </div>
+            <div class="slider__slide">
+                <a href="images/doc-3.png">
+                    <img src="images/doc-3.png" alt="лицензия">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slider image">
+    <h2 class="section__title">Как выглядит наше оборудование</h2>
+    <div class="slider-dillers">
+        <div class="slider-dillers__image">
+            <img src="images/width-equipment.png" alt="picture">
+        </div>
+        <div class="slider-dillers__image">
+            <img src="images/width-equipment.png" alt="picture">
+        </div>
+        <div class="slider-dillers__image">
+            <img src="images/width-equipment.png" alt="picture">
+        </div>
+        <div class="slider-dillers__image">
+            <img src="images/width-equipment.png" alt="picture">
+        </div>
+    </div>
+</section>
+
+<section id="form__diller" class="form step" style="overflow: hidden;">
+    <div class="container">
+        <form action="#">
+            <div class="form__wrapper">
+                <div class="form__block">
+                    <h5 class="section__title">Хочу стать диллером!
+                    </h5>
+                    <p class="section__desc">Для оперативного ответа оставьте свои контакты и наш менеджер свяжется с
+                        Вами.
+                    </p>
+                </div>
+                <div class="form__block">
+                    <div class="group form__block-top-input">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Ваше имя</label>
+                    </div>
+                    <div class="form__submit">
+                        <div class="group form__block-bottom-input">
+                            <input id="phone2" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Ваш номер</label>
+                        </div>
+                        <button class="form__btn" type="submit"><span>Оставить заявку</span></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="quest">
+    <div class="container">
+        <div class="quest__content">
+            <h4 class="quest__text">Остались вопросы?
+                <br> Звоните — <a href="+88004441181">8 800 444-11-81</a>
+            </h4>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__block footer__logo">
+                <div class="footer__logo-img">
+                    <img src="images/header__logo.png" alt="Логотип ПЗО">
+                </div>
+                <div class="footer__logo-img">
+                    <img src="images/maked-RU.png" alt="Сделано в России">
+                </div>
+            </div>
+            <div class="footer__block">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Прессовое оборудование</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Оборудование для <br> переработки резины</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Запчасти</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Транспорт</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Гильотины</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Дробилки</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Оборудование для мойки</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Центрифуги</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Сушильные комплексы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__block">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Другое оборудование</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Периферия</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Циклоны</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Полимерпесчаное</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Агломераторы</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Шредеры</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">О компании</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Спрос по России</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Вакансии</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="#" class="footer__link">Служба-сервис</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__block">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__list bold">
+                            Режим работы:
+                        </li>
+                        <li class="footer__list">
+                            Пн-Пт: 09:00-18:00
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__block contact">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__list bold">
+                            Контакты:
+                        </li>
+                        <li class="footer__list">
+                            <a href="tel:74993900555" class="footer__link">+7 499 390-05-55</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="tel:88004441181" class="footer__link">+8 800 444-11-81</a>
+                        </li>
+                        <li class="footer__list">
+                            <a href="mailto:sell@p-z-o.com" class="footer__link">sell@p-z-o.com</a>
+                        </li>
+                        <li class="footer__list">
+                            г. Подольск, <br> ул. Плещеевская, 34
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__wrapper">
+            <div class="footer__block">
+                <h5 class="footer__block-text">2016–2021 ©</h5>
+                <h6 class="footer__block-text">«Подольский завод оборудования». Все права защищены.</h6>
+            </div>
+            <div class="footer__socials">
+                <div class="footer__social vk">
+                    <a href="#" class="footer__soc-link">
+                        <svg width="42" height="44" viewBox="0 0 42 44" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M39.3237 0.578125H2.68224C1.20034 0.578125 0 1.80704 0 3.32119V40.8351C0 42.3492 1.20034 43.5781 2.68224 43.5781H39.3207C40.7997 43.5781 42 42.3492 42 40.8351V3.32119C42.003 1.80401 40.8026 0.578125 39.3237 0.578125ZM34.8395 26.7799C35.6071 27.5809 37.2727 28.9252 36.9704 30.2937C36.6918 31.5499 34.8602 31.0917 33.0819 31.1645C31.0517 31.2525 29.8484 31.298 28.6273 30.2937C28.0524 29.8173 27.7145 29.2529 27.1632 28.6217C26.6623 28.0513 26.031 27.0287 25.1715 27.0681C23.6274 27.147 24.1105 29.35 23.5622 30.852C14.979 32.2357 11.5321 26.8072 8.49128 21.5395C7.01828 18.9876 4.89027 13.5076 4.89027 13.5076L10.9601 13.4863C10.9601 13.4863 12.9073 17.1124 13.423 18.047C13.8617 18.842 14.3448 19.4731 14.8427 20.1832C15.2606 20.7718 15.9215 21.9249 16.6447 21.8308C17.8213 21.6761 18.0347 17.0031 17.3056 15.4374C17.0152 14.8032 16.3187 14.5817 15.5985 14.3663C15.8415 12.7945 22.4063 12.4668 23.4674 13.6866C25.0085 15.4587 22.4004 20.3925 24.5106 21.8308C27.4744 20.2408 30.0055 13.5834 30.0055 13.5834L37.1127 13.6289C37.1127 13.6289 36.0013 17.2277 34.8365 18.8238C34.1578 19.7584 31.9053 21.8399 31.9942 23.3844C32.0653 24.6073 33.897 25.7967 34.8395 26.7799Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__social odn">
+                    <a href="#" class="footer__soc-link">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.0881 17.8949C24.4753 17.8872 26.3766 15.9704 26.368 13.5777C26.3584 11.185 24.454 9.27917 22.0658 9.27735C19.6577 9.27507 17.7345 11.2151 17.7532 13.6296C17.7709 16.0131 19.6936 17.9049 22.0881 17.8949Z"
+                                fill="white" />
+                            <path
+                                d="M41.1896 0.789062H2.95241C1.69559 0.789062 0.676392 1.80781 0.676392 3.06508V41.3022C0.676392 42.5595 1.69559 43.5783 2.95241 43.5783H41.1896C42.4468 43.5783 43.4656 42.5595 43.4656 41.3022V3.06508C43.4656 1.80781 42.4468 0.789062 41.1896 0.789062ZM22.1074 4.77938C26.9776 4.79167 30.8878 8.77653 30.8637 13.7023C30.8378 18.5138 26.8638 22.414 22.0013 22.3976C17.1871 22.3812 13.2396 18.3904 13.2669 13.5685C13.2956 8.69369 17.2458 4.76482 22.1074 4.77938ZM31.9731 25.8581C30.896 26.9647 29.5996 27.764 28.1594 28.3235C26.7978 28.8497 25.3061 29.1164 23.8294 29.293C24.0525 29.5361 24.1576 29.654 24.296 29.7947C26.3008 31.809 28.3137 33.815 30.3116 35.8352C30.9916 36.5231 31.1355 37.3766 30.7599 38.1773C30.3498 39.0535 29.4326 39.6285 28.5322 39.5666C27.9622 39.5265 27.518 39.2429 27.1238 38.8464C25.6107 37.3238 24.0689 35.8298 22.5877 34.2803C22.1566 33.8287 21.949 33.9129 21.5675 34.3058C20.0458 35.8726 18.5004 37.4153 16.9449 38.9488C16.2462 39.638 15.4155 39.7614 14.6038 39.3685C13.7426 38.9511 13.1954 38.0721 13.2378 37.1877C13.2669 36.5904 13.5609 36.1343 13.9711 35.7246C15.954 33.744 17.9323 31.7584 19.9115 29.7742C20.0431 29.6431 20.1651 29.5024 20.3558 29.2985C17.6569 29.0167 15.2234 28.353 13.1408 26.7234C12.8827 26.5209 12.6155 26.3251 12.3788 26.0984C11.4675 25.2226 11.376 24.2207 12.0975 23.1869C12.7138 22.3029 13.7508 22.0653 14.8273 22.5729C15.0363 22.6707 15.2347 22.7941 15.425 22.9256C19.307 25.5931 24.6406 25.6673 28.5376 23.0467C28.9232 22.7522 29.3361 22.5082 29.8149 22.3871C30.7458 22.1482 31.6116 22.4891 32.1114 23.303C32.6836 24.2303 32.6759 25.137 31.9731 25.8581Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__social fb">
+                    <a href="#" class="footer__soc-link">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M39.2991 0.789062H2.82065C1.57153 0.789062 0.557373 1.80119 0.557373 3.05234V39.5308C0.557373 40.7819 1.57153 41.7954 2.82065 41.7954H22.4595V25.9153H17.116V19.7258H22.4595V15.1614C22.4595 9.86579 25.6931 6.98066 30.4181 6.98066C32.6834 6.98066 34.626 7.15013 35.1925 7.22373V12.759L31.9151 12.7604C29.3459 12.7604 28.8503 13.9818 28.8503 15.7731V19.7237H34.9798L34.1783 25.9126H28.8497V41.7934H39.2984C40.5489 41.7934 41.5637 40.7785 41.5637 39.5308V3.05099C41.563 1.80119 40.5495 0.789062 39.2991 0.789062Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__social inst">
+                    <a href="#" class="footer__soc-link">
+                        <svg width="39" height="40" viewBox="0 0 39 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.4431 0.578125H10.5569C4.73575 0.578125 0 5.31387 0 11.1351V29.0215C0 34.8424 4.73575 39.5781 10.5569 39.5781H28.4434C34.2643 39.5781 39 34.8424 39 29.0215V11.1351C39 5.31387 34.2643 0.578125 28.4431 0.578125V0.578125ZM19.5 30.7419C13.6199 30.7419 8.83624 25.9582 8.83624 20.0781C8.83624 14.198 13.6199 9.41436 19.5 9.41436C25.3801 9.41436 30.1638 14.198 30.1638 20.0781C30.1638 25.9582 25.3801 30.7419 19.5 30.7419ZM30.4188 11.9292C28.6811 11.9292 27.2677 10.5159 27.2677 8.77821C27.2677 7.04053 28.6811 5.62689 30.4188 5.62689C32.1564 5.62689 33.5701 7.04053 33.5701 8.77821C33.5701 10.5159 32.1564 11.9292 30.4188 11.9292Z"
+                                fill="white" />
+                            <path
+                                d="M19.5 11.5781C14.8133 11.5781 11 15.3911 11 20.0781C11 24.7648 14.8133 28.5781 19.5 28.5781C24.187 28.5781 28 24.7648 28 20.0781C28 15.3911 24.187 11.5781 19.5 11.5781Z"
+                                fill="white" />
+                            <path
+                                d="M29.9998 7.57812C29.4486 7.57812 29 8.02685 29 8.57812C29 9.1294 29.4486 9.57812 29.9998 9.57812C30.5514 9.57812 31 9.12974 31 8.57812C31 8.02651 30.5514 7.57812 29.9998 7.57812Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__social yt">
+                    <a href="#" class="footer__soc-link">
+                        <svg width="35" height="42" viewBox="0 0 35 42" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2045 3.91016V12.9236C22.2045 13.702 22.2653 14.2736 22.3873 14.6395C22.5855 15.2044 23.0356 15.486 23.7369 15.486C24.4992 15.486 25.2848 15.0143 26.093 14.0678V15.326H28.1752V3.91016H26.0935V12.6263C25.6358 13.2831 25.2016 13.6101 24.7893 13.6101C24.5149 13.6101 24.3546 13.443 24.3091 13.1069C24.2938 13.0768 24.2861 12.8092 24.2861 12.3064V3.91016H22.2045Z"
+                                fill="white" />
+                            <path
+                                d="M17.444 15.4887C18.4963 15.4887 19.3045 15.0999 19.869 14.3223C20.296 13.7582 20.5096 12.8578 20.5096 11.6225V7.61899C20.5096 6.39906 20.296 5.50713 19.869 4.94262C19.3045 4.1642 18.4964 3.77539 17.444 3.77539C16.4218 3.77539 15.6213 4.1642 15.0415 4.94262C14.6144 5.50757 14.4009 6.3995 14.4009 7.61899V11.6225C14.4009 12.8434 14.6144 13.7435 15.0415 14.3223C15.6208 15.0999 16.4218 15.4887 17.444 15.4887ZM16.46 7.20685C16.46 6.15489 16.788 5.62881 17.4439 5.62881C18.0994 5.62881 18.4278 6.15497 18.4278 7.20685V12.0113C18.4278 13.0795 18.0994 13.6129 17.4439 13.6129C16.788 13.6129 16.46 13.0795 16.46 12.0113V7.20685Z"
+                                fill="white" />
+                            <path
+                                d="M11.6089 15.3284V9.12869L14.3771 0H12.0435L10.488 6.01721L8.8631 0H6.43811C6.86519 1.28169 7.36073 2.70795 7.92517 4.27789C8.64191 6.3835 9.10682 7.99981 9.32081 9.12877V15.328H11.6088V15.3284H11.6089Z"
+                                fill="white" />
+                            <path
+                                d="M32.9725 18.9201C32.2935 18.3105 31.5118 17.9522 30.6273 17.8446C27.8202 17.5399 23.5869 17.3867 17.9276 17.3867C12.2678 17.3867 8.0422 17.5395 5.25042 17.8446C4.35013 17.9518 3.56478 18.3105 2.89339 18.9201C2.222 19.5316 1.77959 20.286 1.56601 21.1863C1.16902 22.9563 0.971191 25.6253 0.971191 29.196C0.971191 32.827 1.16946 35.4964 1.56601 37.2057C1.7642 38.1051 2.20264 38.8603 2.88168 39.4709C3.56028 40.0815 4.34203 40.4321 5.22693 40.524C8.03366 40.844 12.2669 41.004 17.9272 41.004C23.5869 41.004 27.8202 40.844 30.6269 40.524C31.5114 40.4321 32.2895 40.0815 32.9608 39.4709C33.6318 38.8603 34.0743 38.1051 34.2883 37.2057C34.6848 35.4356 34.883 32.7657 34.883 29.196C34.883 25.5649 34.6848 22.8954 34.2883 21.1863C34.0896 20.286 33.6511 19.5316 32.9725 18.9201ZM10.6506 23.4971H8.20211V36.5186H5.914V23.4971H3.51154V21.3463H10.6511V23.4971H10.6506ZM16.8286 36.5186H14.7919V35.282C13.9682 36.2126 13.1901 36.6785 12.4579 36.6785C11.7558 36.6785 11.3138 36.396 11.1305 35.8318C11.0083 35.4654 10.9475 34.9094 10.9475 34.1609V25.213H12.9842V33.5436C12.9842 34.0316 12.9919 34.2988 13.0072 34.3443C13.0531 34.6643 13.2131 34.8243 13.4879 34.8243C13.8998 34.8243 14.3346 34.5043 14.7924 33.8631V25.213H16.829V36.5186H16.8286ZM24.6088 33.1317C24.6088 34.2456 24.5403 35.008 24.4029 35.4199C24.1434 36.2586 23.6022 36.6785 22.7781 36.6785C22.0459 36.6785 21.3366 36.2586 20.65 35.4199V36.5186H18.6133V21.3463H20.65V26.312C21.3056 25.4887 22.0152 25.0764 22.7781 25.0764C23.6018 25.0764 24.1434 25.5036 24.4029 26.3575C24.5403 26.7545 24.6088 27.5097 24.6088 28.6236V33.1317ZM32.3431 31.2553H28.2473V33.2461C28.2473 34.2992 28.5978 34.8246 29.2998 34.8246C29.8031 34.8246 30.1082 34.5502 30.215 34.0014C30.2452 33.8486 30.2609 33.3835 30.2609 32.6049H32.3431V32.9027C32.3431 33.6507 32.3278 34.0924 32.2971 34.2302C32.2512 34.6426 32.0912 35.0535 31.8169 35.4658C31.2676 36.2738 30.444 36.6789 29.3454 36.6789C28.2929 36.6789 27.4687 36.29 26.874 35.5114C26.4315 34.9472 26.2102 34.0631 26.2102 32.8572V28.8981C26.2102 27.6932 26.4238 26.8081 26.851 26.243C27.4457 25.4653 28.2617 25.0764 29.2995 25.0764C30.3214 25.0764 31.1302 25.4652 31.7249 26.243C32.1368 26.8081 32.3427 27.6931 32.3427 28.8981V31.2553H32.3431Z"
+                                fill="white" />
+                            <path
+                                d="M29.2757 26.9316C28.5898 26.9316 28.2473 27.4502 28.2473 28.4864V29.5383H30.3048V28.4864C30.3042 27.4506 29.9617 26.9316 29.2757 26.9316Z"
+                                fill="white" />
+                            <path
+                                d="M21.6765 26.9297C21.3256 26.9297 20.9825 27.0977 20.6475 27.4336V34.3158C20.9826 34.6517 21.3257 34.8188 21.6765 34.8188C22.2709 34.8188 22.5686 34.3086 22.5686 33.287V28.4625C22.5681 27.4407 22.2709 26.9297 21.6765 26.9297Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div id="back-to-top-desc" class="footer__back-to-top">
+                    <a href="#" class="footer__back-to-top-link">
+                        <img src="images/arrow_up.png" alt="вверх">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<form action="#" id="search" class="mfp-hide white-popup-block popup-wrapper">
+    <div class="container">
+        <div class="search-head">
+            <a href="index.html">
+                <img src="images/logo-modal.png" alt="logotype PZO">
+            </a>
+            <a href="#" class="popup-dismiss">
+                <img src="images/close-btn.png" alt="close icon">
+            </a>
+        </div>
+        <div class="search__content">
+            <h3 class="search__text">
+                Какое оборудование вас интересует?
+            </h3>
+            <div class="search__wrapper">
+                <div class="group">
+                    <input type="text" required placeholder="Пресс для макулатуры">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="search__btn">
+                    <button class="search__submit" type="submit"><span>Найти</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="#" id="question" class="mfp-hide white-popup-block popup-wrapper popup-question">
+    <input type="hidden" id="question-value" value="Вопрос">
+    <div class="container">
+        <div class="search-head">
+            <a href="index.html">
+                <img src="images/logo-modal.png" alt="logotype PZO">
+            </a>
+            <a href="#" class="popup-dismiss">
+                <img src="images/close-btn.png" alt="close icon">
+            </a>
+        </div>
+        <div class="question__content">
+            <div class="search__content">
+                <h3 class="search__text">
+                    Помогу и проконсультирую
+                </h3>
+                <p class="search__desc">Перезвоню вам через 27 секунд</p>
+            </div>
+            <div class="question__wrapper">
+                <div class="question__block">
+                    <div class="group">
+                        <input id="phone3" type="text" required placeholder="+7 (___) ___-__-__">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="question__manager">
+                        <div class="question__manager-img">
+                            <img src="images/manager.png" alt="Екатерина Александрова">
+                        </div>
+                        <div class="question__manager-text">
+                            <h5>Екатерина Александрова</h5>
+                            <p>Ваш личный менеджер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question__block">
+                    <div class="question__btn">
+                        <button class="question__btn-submit" type="submit"><span>Жду звонка!</span></button>
+                    </div>
+                    <div class="question__timer">
+                        <div class="question__timer-img">
+                            <img src="images/clock.png" alt="clock">
+                        </div>
+                        <div class="question__timer-text">
+                            <h4>0:27,00</h4>
+                        </div>
+                    </div>
+                    <div class="question__timer-subtitle">
+                        <span>Звонок бесплатный</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question__socials">
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="58" height="48" viewBox="0 0 58 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.7587 31.6352L21.7993 45.0367C23.172 45.0367 23.7665 44.4511 24.4794 43.7479L30.9152 37.64L44.2507 47.3383C46.6964 48.6919 48.4195 47.9791 49.0793 45.1039L57.8327 4.37135L57.8351 4.36895C58.6108 0.778569 56.5276 -0.625424 54.1447 0.255372L2.69266 19.8177C-0.81884 21.1713 -0.765672 23.1153 2.09573 23.996L15.25 28.0592L45.8046 9.07293C47.2426 8.12733 48.55 8.65053 47.4746 9.59612L22.7587 31.6352Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="54" height="59" viewBox="0 0 54 59" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.8676 1.39728C32.0025 -0.465761 21.998 -0.465761 12.1308 1.39728C7.81509 2.35152 2.38561 7.51654 1.32413 11.6711C-0.441377 19.7096 -0.441377 27.8586 1.32413 35.8971C2.38561 40.0516 7.81509 45.2167 12.1308 46.1709C12.1319 46.1711 12.133 46.1713 12.134 46.1716C12.3263 46.209 12.4664 46.3743 12.4664 46.5688V58.3447C12.4664 58.9333 13.1901 59.2232 13.602 58.797L19.2364 53.0564C19.2364 53.0564 23.7262 48.4808 24.5336 47.6581C24.6125 47.5776 24.7215 47.5341 24.8344 47.5371C30.523 47.6936 36.2177 47.2374 41.8676 46.1711C46.1833 45.2169 51.6149 40.0519 52.6742 35.8973C54.4419 27.8588 54.4419 19.7099 52.6742 11.6713C51.6147 7.51655 46.1855 2.35152 41.8676 1.39728ZM42.018 36.4967C41.1548 38.316 39.8989 39.8296 38.0872 40.7958C37.5761 41.0684 36.9651 41.1565 36.3882 41.3328C35.7247 41.1329 35.0924 40.9985 34.5052 40.7566C28.4205 38.2505 22.8206 35.0173 18.3848 30.0611C15.8623 27.2427 13.8878 24.0608 12.2191 20.6935C11.4276 19.0966 10.7607 17.4372 10.0808 15.7886C9.46072 14.2852 10.374 12.732 11.3354 11.5992C12.2376 10.5361 13.3985 9.72256 14.6557 9.12296C15.6369 8.65493 16.6049 8.92476 17.3216 9.75047C18.8709 11.5356 20.294 13.4121 21.4463 15.4813C22.1549 16.7541 21.9605 18.3099 20.6763 19.176C20.3641 19.3866 20.0797 19.6337 19.7889 19.8715C19.5339 20.0799 19.2939 20.2904 19.1191 20.5726C18.7996 21.0886 18.7843 21.6977 18.9901 22.259C20.5738 26.5797 23.2432 29.9395 27.6239 31.7491C28.3251 32.0386 29.0289 32.3757 29.8364 32.2823C31.1889 32.1254 31.6268 30.6527 32.5745 29.8832C33.5008 29.1313 34.6846 29.1214 35.6824 29.7482C36.6805 30.3753 37.648 31.0484 38.6097 31.7288C39.5537 32.3965 40.4935 33.0498 41.3643 33.811C42.2011 34.5428 42.4894 35.5031 42.018 36.4967ZM34.1617 22.417C33.784 22.4237 33.9324 22.4163 34.076 22.4122C33.4673 22.391 33.1362 22.0353 33.0708 21.4569C33.023 21.0343 32.9853 20.6061 32.8838 20.195C32.6837 19.3853 32.2501 18.6349 31.5642 18.1387C31.2403 17.9044 30.8733 17.7334 30.4888 17.6235C30.0003 17.4835 29.4931 17.522 29.0058 17.4034C28.4765 17.2749 28.1838 16.8493 28.2669 16.3564C28.3425 15.9078 28.7821 15.5577 29.2758 15.5932C32.3615 15.8143 34.5669 17.398 34.8816 21.0045C34.9039 21.2589 34.93 21.5277 34.8731 21.7711C34.7807 22.1669 34.4958 22.3729 34.2079 22.4103C34.2314 22.4107 34.2269 22.4127 34.1617 22.417ZM32.243 14.1688C31.2961 13.7085 30.2721 13.4225 29.2342 13.252C28.7806 13.1775 28.3222 13.1323 27.8665 13.0693C27.3141 12.9932 27.0195 12.6437 27.0454 12.1034C27.0698 11.5971 27.4425 11.2329 27.9983 11.2641C29.8249 11.3671 31.5891 11.7589 33.2129 12.6125C36.515 14.3486 38.4013 17.0888 38.9519 20.7478C38.977 20.9136 39.0168 21.0778 39.0295 21.2442C39.0609 21.6549 39.0803 22.0662 39.1121 22.6078C39.099 22.7065 39.092 22.9385 39.0341 23.157C38.8228 23.9503 37.6114 24.0496 37.3324 23.249C37.2498 23.0114 37.2374 22.7411 37.2369 22.4854C37.2341 20.8119 36.8677 19.1401 36.0177 17.6841C35.1438 16.188 33.8086 14.93 32.243 14.1688ZM42.4463 25.4771C41.8083 25.4846 41.5212 24.9547 41.4798 24.3867C41.3979 23.2624 41.3412 22.1331 41.1849 21.0181C40.361 15.1323 35.6334 10.2629 29.7322 9.21795C28.8442 9.06064 27.9351 9.01932 27.0358 8.92562C26.4671 8.86633 25.7224 8.83215 25.5964 8.13042C25.4907 7.54208 25.9909 7.07362 26.5552 7.04354C26.7086 7.03532 26.863 7.04224 27.0171 7.04289C34.66 7.25559 27.4835 7.05933 27.0375 7.04397C34.9871 7.27398 41.5141 12.5147 42.9138 20.3192C43.1525 21.6501 43.2375 23.011 43.3436 24.3618C43.3881 24.9298 43.064 25.4697 42.4463 25.4771Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="#" id="question-not-worktime" class="mfp-hide white-popup-block popup-wrapper popup-question">
+    <input type="hidden" id="question-not-worktime-value" value="Вопрос">
+    <div class="container">
+        <div class="search-head">
+            <a href="index.html">
+                <img src="images/logo-modal.png" alt="logotype PZO">
+            </a>
+            <a href="#" class="popup-dismiss">
+                <img src="images/close-btn.png" alt="close icon">
+            </a>
+        </div>
+        <div class="question__content">
+            <div class="search__content">
+                <h3 class="search__text">
+                    Помогу и проконсультирую
+                </h3>
+                <p class="search__desc">Перезвоню вам в удобное время</p>
+            </div>
+            <div class="question__wrapper">
+                <div class="question__block">
+                    <div class="group">
+                        <input id="phone4" type="text" required placeholder="+7 (___) ___-__-__">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="question__manager">
+                        <div class="question__manager-img">
+                            <img src="images/manager.png" alt="Екатерина Александрова">
+                        </div>
+                        <div class="question__manager-text">
+                            <h5>Екатерина Александрова</h5>
+                            <p>Ваш личный менеджер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question__block">
+                    <div class="question__btn">
+                        <button class="question__btn-submit" type="submit"><span>Жду звонка!</span></button>
+                    </div>
+                    <div class="question__timer">
+                        <select id="times">
+                            <option>Наберите мне с 9 до 12</option>
+                            <option>Наберите мне с 12 до 15</option>
+                            <option>Наберите мне с 15 до 18</option>
+                        </select>
+                    </div>
+                    <div class="question__timer-subtitle">
+                        <span>Звонок бесплатный</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question__socials">
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="58" height="48" viewBox="0 0 58 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.7587 31.6352L21.7993 45.0367C23.172 45.0367 23.7665 44.4511 24.4794 43.7479L30.9152 37.64L44.2507 47.3383C46.6964 48.6919 48.4195 47.9791 49.0793 45.1039L57.8327 4.37135L57.8351 4.36895C58.6108 0.778569 56.5276 -0.625424 54.1447 0.255372L2.69266 19.8177C-0.81884 21.1713 -0.765672 23.1153 2.09573 23.996L15.25 28.0592L45.8046 9.07293C47.2426 8.12733 48.55 8.65053 47.4746 9.59612L22.7587 31.6352Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="54" height="59" viewBox="0 0 54 59" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.8676 1.39728C32.0025 -0.465761 21.998 -0.465761 12.1308 1.39728C7.81509 2.35152 2.38561 7.51654 1.32413 11.6711C-0.441377 19.7096 -0.441377 27.8586 1.32413 35.8971C2.38561 40.0516 7.81509 45.2167 12.1308 46.1709C12.1319 46.1711 12.133 46.1713 12.134 46.1716C12.3263 46.209 12.4664 46.3743 12.4664 46.5688V58.3447C12.4664 58.9333 13.1901 59.2232 13.602 58.797L19.2364 53.0564C19.2364 53.0564 23.7262 48.4808 24.5336 47.6581C24.6125 47.5776 24.7215 47.5341 24.8344 47.5371C30.523 47.6936 36.2177 47.2374 41.8676 46.1711C46.1833 45.2169 51.6149 40.0519 52.6742 35.8973C54.4419 27.8588 54.4419 19.7099 52.6742 11.6713C51.6147 7.51655 46.1855 2.35152 41.8676 1.39728ZM42.018 36.4967C41.1548 38.316 39.8989 39.8296 38.0872 40.7958C37.5761 41.0684 36.9651 41.1565 36.3882 41.3328C35.7247 41.1329 35.0924 40.9985 34.5052 40.7566C28.4205 38.2505 22.8206 35.0173 18.3848 30.0611C15.8623 27.2427 13.8878 24.0608 12.2191 20.6935C11.4276 19.0966 10.7607 17.4372 10.0808 15.7886C9.46072 14.2852 10.374 12.732 11.3354 11.5992C12.2376 10.5361 13.3985 9.72256 14.6557 9.12296C15.6369 8.65493 16.6049 8.92476 17.3216 9.75047C18.8709 11.5356 20.294 13.4121 21.4463 15.4813C22.1549 16.7541 21.9605 18.3099 20.6763 19.176C20.3641 19.3866 20.0797 19.6337 19.7889 19.8715C19.5339 20.0799 19.2939 20.2904 19.1191 20.5726C18.7996 21.0886 18.7843 21.6977 18.9901 22.259C20.5738 26.5797 23.2432 29.9395 27.6239 31.7491C28.3251 32.0386 29.0289 32.3757 29.8364 32.2823C31.1889 32.1254 31.6268 30.6527 32.5745 29.8832C33.5008 29.1313 34.6846 29.1214 35.6824 29.7482C36.6805 30.3753 37.648 31.0484 38.6097 31.7288C39.5537 32.3965 40.4935 33.0498 41.3643 33.811C42.2011 34.5428 42.4894 35.5031 42.018 36.4967ZM34.1617 22.417C33.784 22.4237 33.9324 22.4163 34.076 22.4122C33.4673 22.391 33.1362 22.0353 33.0708 21.4569C33.023 21.0343 32.9853 20.6061 32.8838 20.195C32.6837 19.3853 32.2501 18.6349 31.5642 18.1387C31.2403 17.9044 30.8733 17.7334 30.4888 17.6235C30.0003 17.4835 29.4931 17.522 29.0058 17.4034C28.4765 17.2749 28.1838 16.8493 28.2669 16.3564C28.3425 15.9078 28.7821 15.5577 29.2758 15.5932C32.3615 15.8143 34.5669 17.398 34.8816 21.0045C34.9039 21.2589 34.93 21.5277 34.8731 21.7711C34.7807 22.1669 34.4958 22.3729 34.2079 22.4103C34.2314 22.4107 34.2269 22.4127 34.1617 22.417ZM32.243 14.1688C31.2961 13.7085 30.2721 13.4225 29.2342 13.252C28.7806 13.1775 28.3222 13.1323 27.8665 13.0693C27.3141 12.9932 27.0195 12.6437 27.0454 12.1034C27.0698 11.5971 27.4425 11.2329 27.9983 11.2641C29.8249 11.3671 31.5891 11.7589 33.2129 12.6125C36.515 14.3486 38.4013 17.0888 38.9519 20.7478C38.977 20.9136 39.0168 21.0778 39.0295 21.2442C39.0609 21.6549 39.0803 22.0662 39.1121 22.6078C39.099 22.7065 39.092 22.9385 39.0341 23.157C38.8228 23.9503 37.6114 24.0496 37.3324 23.249C37.2498 23.0114 37.2374 22.7411 37.2369 22.4854C37.2341 20.8119 36.8677 19.1401 36.0177 17.6841C35.1438 16.188 33.8086 14.93 32.243 14.1688ZM42.4463 25.4771C41.8083 25.4846 41.5212 24.9547 41.4798 24.3867C41.3979 23.2624 41.3412 22.1331 41.1849 21.0181C40.361 15.1323 35.6334 10.2629 29.7322 9.21795C28.8442 9.06064 27.9351 9.01932 27.0358 8.92562C26.4671 8.86633 25.7224 8.83215 25.5964 8.13042C25.4907 7.54208 25.9909 7.07362 26.5552 7.04354C26.7086 7.03532 26.863 7.04224 27.0171 7.04289C34.66 7.25559 27.4835 7.05933 27.0375 7.04397C34.9871 7.27398 41.5141 12.5147 42.9138 20.3192C43.1525 21.6501 43.2375 23.011 43.3436 24.3618C43.3881 24.9298 43.064 25.4697 42.4463 25.4771Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="#" id="question-tool" class="mfp-hide white-popup-block popup-wrapper popup-question">
+    <input type="hidden" class="question-tool-hidden-input" value="Вопрос по оборудованию">
+    <div class="container">
+        <div class="search-head">
+            <a href="index.html">
+                <img src="images/logo-modal.png" alt="logotype PZO">
+            </a>
+            <a href="#" class="popup-dismiss">
+                <img src="images/close-btn.png" alt="close icon">
+            </a>
+        </div>
+        <div class="question__content">
+            <div class="search__content">
+                <h3 class="search__text">
+                    Задать вопрос по оборудованию
+                </h3>
+                <div class="question__tools-name mobile">
+                    <h3 class="question__tools-name-text">Ванна флотации PZO-VF302+</h3>
+                </div>
+            </div>
+            <div class="question__wrapper">
+                <div class="question__block">
+                    <div class="question__image">
+                        <img class="question__image-img" src="images/tools-1.png" alt="оборудование ПЗО">
+                    </div>
+                    <div class="question__manager">
+                        <div class="question__manager-img">
+                            <img src="images/manager.png" alt="Екатерина Александрова">
+                        </div>
+                        <div class="question__manager-text">
+                            <h5>Екатерина Александрова</h5>
+                            <p>Ваш личный менеджер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question__block">
+                    <div class="question__tools-name descktop">
+                        <h3 class="question__tools-name-text">Ванна флотации PZO-VF302+</h3>
+                    </div>
+                    <div class="group">
+                        <input id="phone5" type="text" required placeholder="+7 (___) ___-__-__">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="question__btn">
+                        <button class="question__btn-submit" type="submit"><span>Жду звонка!</span></button>
+                    </div>
+                    <div class="question__timer">
+                        <div class="question__timer-img">
+                            <img src="images/clock.png" alt="clock">
+                        </div>
+                        <div class="question__timer-text">
+                            <h4>0:27,00</h4>
+                        </div>
+                    </div>
+                    <div class="question__timer-subtitle">
+                        <span>Звонок бесплатный</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question__socials">
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="58" height="48" viewBox="0 0 58 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.7587 31.6352L21.7993 45.0367C23.172 45.0367 23.7665 44.4511 24.4794 43.7479L30.9152 37.64L44.2507 47.3383C46.6964 48.6919 48.4195 47.9791 49.0793 45.1039L57.8327 4.37135L57.8351 4.36895C58.6108 0.778569 56.5276 -0.625424 54.1447 0.255372L2.69266 19.8177C-0.81884 21.1713 -0.765672 23.1153 2.09573 23.996L15.25 28.0592L45.8046 9.07293C47.2426 8.12733 48.55 8.65053 47.4746 9.59612L22.7587 31.6352Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="54" height="59" viewBox="0 0 54 59" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.8676 1.39728C32.0025 -0.465761 21.998 -0.465761 12.1308 1.39728C7.81509 2.35152 2.38561 7.51654 1.32413 11.6711C-0.441377 19.7096 -0.441377 27.8586 1.32413 35.8971C2.38561 40.0516 7.81509 45.2167 12.1308 46.1709C12.1319 46.1711 12.133 46.1713 12.134 46.1716C12.3263 46.209 12.4664 46.3743 12.4664 46.5688V58.3447C12.4664 58.9333 13.1901 59.2232 13.602 58.797L19.2364 53.0564C19.2364 53.0564 23.7262 48.4808 24.5336 47.6581C24.6125 47.5776 24.7215 47.5341 24.8344 47.5371C30.523 47.6936 36.2177 47.2374 41.8676 46.1711C46.1833 45.2169 51.6149 40.0519 52.6742 35.8973C54.4419 27.8588 54.4419 19.7099 52.6742 11.6713C51.6147 7.51655 46.1855 2.35152 41.8676 1.39728ZM42.018 36.4967C41.1548 38.316 39.8989 39.8296 38.0872 40.7958C37.5761 41.0684 36.9651 41.1565 36.3882 41.3328C35.7247 41.1329 35.0924 40.9985 34.5052 40.7566C28.4205 38.2505 22.8206 35.0173 18.3848 30.0611C15.8623 27.2427 13.8878 24.0608 12.2191 20.6935C11.4276 19.0966 10.7607 17.4372 10.0808 15.7886C9.46072 14.2852 10.374 12.732 11.3354 11.5992C12.2376 10.5361 13.3985 9.72256 14.6557 9.12296C15.6369 8.65493 16.6049 8.92476 17.3216 9.75047C18.8709 11.5356 20.294 13.4121 21.4463 15.4813C22.1549 16.7541 21.9605 18.3099 20.6763 19.176C20.3641 19.3866 20.0797 19.6337 19.7889 19.8715C19.5339 20.0799 19.2939 20.2904 19.1191 20.5726C18.7996 21.0886 18.7843 21.6977 18.9901 22.259C20.5738 26.5797 23.2432 29.9395 27.6239 31.7491C28.3251 32.0386 29.0289 32.3757 29.8364 32.2823C31.1889 32.1254 31.6268 30.6527 32.5745 29.8832C33.5008 29.1313 34.6846 29.1214 35.6824 29.7482C36.6805 30.3753 37.648 31.0484 38.6097 31.7288C39.5537 32.3965 40.4935 33.0498 41.3643 33.811C42.2011 34.5428 42.4894 35.5031 42.018 36.4967ZM34.1617 22.417C33.784 22.4237 33.9324 22.4163 34.076 22.4122C33.4673 22.391 33.1362 22.0353 33.0708 21.4569C33.023 21.0343 32.9853 20.6061 32.8838 20.195C32.6837 19.3853 32.2501 18.6349 31.5642 18.1387C31.2403 17.9044 30.8733 17.7334 30.4888 17.6235C30.0003 17.4835 29.4931 17.522 29.0058 17.4034C28.4765 17.2749 28.1838 16.8493 28.2669 16.3564C28.3425 15.9078 28.7821 15.5577 29.2758 15.5932C32.3615 15.8143 34.5669 17.398 34.8816 21.0045C34.9039 21.2589 34.93 21.5277 34.8731 21.7711C34.7807 22.1669 34.4958 22.3729 34.2079 22.4103C34.2314 22.4107 34.2269 22.4127 34.1617 22.417ZM32.243 14.1688C31.2961 13.7085 30.2721 13.4225 29.2342 13.252C28.7806 13.1775 28.3222 13.1323 27.8665 13.0693C27.3141 12.9932 27.0195 12.6437 27.0454 12.1034C27.0698 11.5971 27.4425 11.2329 27.9983 11.2641C29.8249 11.3671 31.5891 11.7589 33.2129 12.6125C36.515 14.3486 38.4013 17.0888 38.9519 20.7478C38.977 20.9136 39.0168 21.0778 39.0295 21.2442C39.0609 21.6549 39.0803 22.0662 39.1121 22.6078C39.099 22.7065 39.092 22.9385 39.0341 23.157C38.8228 23.9503 37.6114 24.0496 37.3324 23.249C37.2498 23.0114 37.2374 22.7411 37.2369 22.4854C37.2341 20.8119 36.8677 19.1401 36.0177 17.6841C35.1438 16.188 33.8086 14.93 32.243 14.1688ZM42.4463 25.4771C41.8083 25.4846 41.5212 24.9547 41.4798 24.3867C41.3979 23.2624 41.3412 22.1331 41.1849 21.0181C40.361 15.1323 35.6334 10.2629 29.7322 9.21795C28.8442 9.06064 27.9351 9.01932 27.0358 8.92562C26.4671 8.86633 25.7224 8.83215 25.5964 8.13042C25.4907 7.54208 25.9909 7.07362 26.5552 7.04354C26.7086 7.03532 26.863 7.04224 27.0171 7.04289C34.66 7.25559 27.4835 7.05933 27.0375 7.04397C34.9871 7.27398 41.5141 12.5147 42.9138 20.3192C43.1525 21.6501 43.2375 23.011 43.3436 24.3618C43.3881 24.9298 43.064 25.4697 42.4463 25.4771Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="#" id="question-tool-not-worktime" class="mfp-hide white-popup-block popup-wrapper popup-question">
+    <input type="hidden" class="question-tool-hidden-input" value="Вопрос по оборудованию">
+    <div class="container">
+        <div class="search-head">
+            <a href="index.html">
+                <img src="images/logo-modal.png" alt="logotype PZO">
+            </a>
+            <a href="#" class="popup-dismiss">
+                <img src="images/close-btn.png" alt="close icon">
+            </a>
+        </div>
+        <div class="question__content">
+            <div class="search__content">
+                <h3 class="search__text">
+                    Задать вопрос по оборудованию
+                </h3>
+                <div class="question__tools-name mobile">
+                    <h3 class="question__tools-name-text">Ванна флотации PZO-VF302+</h3>
+                </div>
+            </div>
+            <div class="question__wrapper">
+                <div class="question__block">
+                    <div class="question__image">
+                        <img class="question__image-img" src="images/tools-1.png" alt="оборудование ПЗО">
+                    </div>
+                    <div class="question__manager">
+                        <div class="question__manager-img">
+                            <img src="images/manager.png" alt="Екатерина Александрова">
+                        </div>
+                        <div class="question__manager-text">
+                            <h5>Екатерина Александрова</h5>
+                            <p>Ваш личный менеджер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question__block">
+                    <div class="question__tools-name descktop">
+                        <h3 class="question__tools-name-text">Ванна флотации PZO-VF302+</h3>
+                    </div>
+                    <div class="group">
+                        <input id="phone6" type="text" required placeholder="+7 (___) ___-__-__">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="question__btn">
+                        <button class="question__btn-submit" type="submit"><span>Жду звонка!</span></button>
+                    </div>
+                    <div class="question__timer">
+                        <select id="time">
+                            <option>Наберите мне с 9 до 12</option>
+                            <option>Наберите мне с 12 до 15</option>
+                            <option>Наберите мне с 15 до 18</option>
+                        </select>
+                    </div>
+                    <div class="question__timer-subtitle">
+                        <span>Звонок бесплатный</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question__socials">
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="58" height="48" viewBox="0 0 58 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.7587 31.6352L21.7993 45.0367C23.172 45.0367 23.7665 44.4511 24.4794 43.7479L30.9152 37.64L44.2507 47.3383C46.6964 48.6919 48.4195 47.9791 49.0793 45.1039L57.8327 4.37135L57.8351 4.36895C58.6108 0.778569 56.5276 -0.625424 54.1447 0.255372L2.69266 19.8177C-0.81884 21.1713 -0.765672 23.1153 2.09573 23.996L15.25 28.0592L45.8046 9.07293C47.2426 8.12733 48.55 8.65053 47.4746 9.59612L22.7587 31.6352Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="question__social">
+                    <a class="question__soc-link" href="#">
+                        <svg width="54" height="59" viewBox="0 0 54 59" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.8676 1.39728C32.0025 -0.465761 21.998 -0.465761 12.1308 1.39728C7.81509 2.35152 2.38561 7.51654 1.32413 11.6711C-0.441377 19.7096 -0.441377 27.8586 1.32413 35.8971C2.38561 40.0516 7.81509 45.2167 12.1308 46.1709C12.1319 46.1711 12.133 46.1713 12.134 46.1716C12.3263 46.209 12.4664 46.3743 12.4664 46.5688V58.3447C12.4664 58.9333 13.1901 59.2232 13.602 58.797L19.2364 53.0564C19.2364 53.0564 23.7262 48.4808 24.5336 47.6581C24.6125 47.5776 24.7215 47.5341 24.8344 47.5371C30.523 47.6936 36.2177 47.2374 41.8676 46.1711C46.1833 45.2169 51.6149 40.0519 52.6742 35.8973C54.4419 27.8588 54.4419 19.7099 52.6742 11.6713C51.6147 7.51655 46.1855 2.35152 41.8676 1.39728ZM42.018 36.4967C41.1548 38.316 39.8989 39.8296 38.0872 40.7958C37.5761 41.0684 36.9651 41.1565 36.3882 41.3328C35.7247 41.1329 35.0924 40.9985 34.5052 40.7566C28.4205 38.2505 22.8206 35.0173 18.3848 30.0611C15.8623 27.2427 13.8878 24.0608 12.2191 20.6935C11.4276 19.0966 10.7607 17.4372 10.0808 15.7886C9.46072 14.2852 10.374 12.732 11.3354 11.5992C12.2376 10.5361 13.3985 9.72256 14.6557 9.12296C15.6369 8.65493 16.6049 8.92476 17.3216 9.75047C18.8709 11.5356 20.294 13.4121 21.4463 15.4813C22.1549 16.7541 21.9605 18.3099 20.6763 19.176C20.3641 19.3866 20.0797 19.6337 19.7889 19.8715C19.5339 20.0799 19.2939 20.2904 19.1191 20.5726C18.7996 21.0886 18.7843 21.6977 18.9901 22.259C20.5738 26.5797 23.2432 29.9395 27.6239 31.7491C28.3251 32.0386 29.0289 32.3757 29.8364 32.2823C31.1889 32.1254 31.6268 30.6527 32.5745 29.8832C33.5008 29.1313 34.6846 29.1214 35.6824 29.7482C36.6805 30.3753 37.648 31.0484 38.6097 31.7288C39.5537 32.3965 40.4935 33.0498 41.3643 33.811C42.2011 34.5428 42.4894 35.5031 42.018 36.4967ZM34.1617 22.417C33.784 22.4237 33.9324 22.4163 34.076 22.4122C33.4673 22.391 33.1362 22.0353 33.0708 21.4569C33.023 21.0343 32.9853 20.6061 32.8838 20.195C32.6837 19.3853 32.2501 18.6349 31.5642 18.1387C31.2403 17.9044 30.8733 17.7334 30.4888 17.6235C30.0003 17.4835 29.4931 17.522 29.0058 17.4034C28.4765 17.2749 28.1838 16.8493 28.2669 16.3564C28.3425 15.9078 28.7821 15.5577 29.2758 15.5932C32.3615 15.8143 34.5669 17.398 34.8816 21.0045C34.9039 21.2589 34.93 21.5277 34.8731 21.7711C34.7807 22.1669 34.4958 22.3729 34.2079 22.4103C34.2314 22.4107 34.2269 22.4127 34.1617 22.417ZM32.243 14.1688C31.2961 13.7085 30.2721 13.4225 29.2342 13.252C28.7806 13.1775 28.3222 13.1323 27.8665 13.0693C27.3141 12.9932 27.0195 12.6437 27.0454 12.1034C27.0698 11.5971 27.4425 11.2329 27.9983 11.2641C29.8249 11.3671 31.5891 11.7589 33.2129 12.6125C36.515 14.3486 38.4013 17.0888 38.9519 20.7478C38.977 20.9136 39.0168 21.0778 39.0295 21.2442C39.0609 21.6549 39.0803 22.0662 39.1121 22.6078C39.099 22.7065 39.092 22.9385 39.0341 23.157C38.8228 23.9503 37.6114 24.0496 37.3324 23.249C37.2498 23.0114 37.2374 22.7411 37.2369 22.4854C37.2341 20.8119 36.8677 19.1401 36.0177 17.6841C35.1438 16.188 33.8086 14.93 32.243 14.1688ZM42.4463 25.4771C41.8083 25.4846 41.5212 24.9547 41.4798 24.3867C41.3979 23.2624 41.3412 22.1331 41.1849 21.0181C40.361 15.1323 35.6334 10.2629 29.7322 9.21795C28.8442 9.06064 27.9351 9.01932 27.0358 8.92562C26.4671 8.86633 25.7224 8.83215 25.5964 8.13042C25.4907 7.54208 25.9909 7.07362 26.5552 7.04354C26.7086 7.03532 26.863 7.04224 27.0171 7.04289C34.66 7.25559 27.4835 7.05933 27.0375 7.04397C34.9871 7.27398 41.5141 12.5147 42.9138 20.3192C43.1525 21.6501 43.2375 23.011 43.3436 24.3618C43.3881 24.9298 43.064 25.4697 42.4463 25.4771Z"
+                                fill="#00406B" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="#" id="cost" class="mfp-hide white-popup-block popup-wrapper popup-question">
+    <input type="hidden" id="question-value" value="Вопрос">
+    <div class="container">
+        <div class="search-head">
+            <a href="index.html">
+                <img src="images/logo-modal.png" alt="logotype PZO">
+            </a>
+            <a href="#" class="popup-dismiss">
+                <img src="images/close-btn.png" alt="close icon">
+            </a>
+        </div>
+        <div class="question__content">
+            <div class="search__content">
+                <h3 class="search__text">
+                    Расчитайте стоимость доставки
+                </h3>
+                <nav class="tools__nav">
+                    <a class="tools__link active" href="page-1" data-delivery-price="530"><span>Деловые линии</span></a>
+                    <a class="tools__link" href="page-2" data-delivery-price="1030"><span>CDEK (Для малогабаритных грузов)</span></a>
+                    <a class="tools__link" href="page-3" data-delivery-price="1230"><span>ПЭК</span></a>
+                </nav>
+            </div>
+            <div class="question__wrapper">
+                <div class="question__block">
+                    <div class="group">
+                        <select id="times" class="delivery--select">
+                            <option data-city-price="0">Ваш город</option>
+                            <option data-city-price="700">Абакан</option>
+                            <option data-city-price="500">Альметьевск</option>
+                            <option data-city-price="200">Анадырь</option>
+                            <option data-city-price="300">Апрелевка</option>
+                            <option data-city-price="300">Абакан</option>
+                            <option data-city-price="900">Альметьевск</option>
+                            <option data-city-price="1100">Анадырь</option>
+                            <option data-city-price="300">Апрелевка</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="question__block">
+                    <div class="question__btn">
+                        <button class="question__btn-submit delivery-calc--btn"><span>Расчитать стоимость</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="question__footer">
+                <p class="section__desc">Приблизительная стоимость: <span class="delivery--total">16 556</span> ₽</p>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
